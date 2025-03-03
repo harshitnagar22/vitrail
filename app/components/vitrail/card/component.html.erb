@@ -3,7 +3,7 @@
     <header>
       <% if title? %>
         <div class="vt-card--title">
-          <% if defined?(link_to) && link_to.present? %>
+          <% if link_to.present? %>
             <%= link_to title, link_to, class: "vt-card--title-link" %>
           <% else %>
             <%= title %>
